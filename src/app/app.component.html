@@ -1,0 +1,26 @@
+<mat-toolbar class="toolbar" color="primary">
+  <button routerLink="" mat-icon-button>
+    <img src="favicon.ico" class="toolbar__icon" />
+  </button>
+  <span class="toolbar__title">Walk my dog!</span>
+  <span class="toolbar__spacer"></span>
+  <!--  @TODO: 10) Nałóż tą samą dyrektywę na oba przyciski z navbara (`My dogs` i `Find a dog`) aby nie wyświetlały się dla niezalogowanych użytkowników -->
+  <button
+    routerLink="find-a-dog"
+    class="toolbar__find-a-dog"
+    color="accent"
+    mat-raised-button
+  >
+    <span>Find a dog</span>
+    <mat-icon>search</mat-icon>
+  </button>
+  <button
+    routerLink="my-dogs"
+    color="accent"
+    mat-raised-button
+  >
+    <span>My dogs</span>
+    <mat-icon>home</mat-icon>
+  </button>
+</mat-toolbar>
+<router-outlet></router-outlet>
